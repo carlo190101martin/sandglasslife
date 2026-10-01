@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandglass Life</title>
+  <meta name="description" content="Sandglass Life plays the day back on your iPhone. Places, walks, and stills stay on the phone. Nothing is uploaded.">
+  <meta name="theme-color" content="#0e0c0a">
+  <meta property="og:title" content="Sandglass Life">
+  <meta property="og:description" content="Play the day back. A private film of your day, kept on your iPhone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sandglasslife.com/">
+  <meta property="og:image" content="https://sandglasslife.com/days.jpg">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <style>
+    :root {
+      --theatre: #0e0c0a;
+      --copper: #d46c35;
+      --cream: #f6f1e8;
+      --muted: rgba(246, 241, 232, 0.66);
+      --line: rgba(246, 241, 232, 0.14);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background:
+        radial-gradient(900px 480px at 50% -10%, rgba(212, 108, 53, 0.18), transparent 60%),
+        var(--theatre);
+      color: var(--cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 28px 0 8px;
+    }
+    header img { width: 36px; height: 36px; border-radius: 9px; }
+    header span {
+      font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+    .hero { padding: 64px 0 28px; max-width: 720px; }
+    .kicker {
+      color: var(--copper);
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin: 0 0 16px;
+    }
+    h1 {
+      font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(48px, 7vw, 84px);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin: 0 0 22px;
+    }
+    .deck { font-size: 19px; color: var(--muted); max-width: 38em; margin: 0; }
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .facts li {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 14px;
+      color: var(--cream);
+      font-size: 14px;
+    }
+    .stage {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 28px;
+      padding: 48px 0 12px;
+    }
+    figure { margin: 0; }
+    .phone {
+      width: min(320px, 78vw);
+      padding: 8px;
+      border-radius: 36px;
+      background: linear-gradient(180deg, #2a241e, #14110e);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+    }
+    .phone img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 28px;
+    }
+    figcaption {
+      margin-top: 14px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 18px 0 72px;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 0 36px;
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    @media (max-width: 760px) {
+      .stage { flex-direction: column; align-items: center; }
+      .hero { padding-top: 36px; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="icon.png" alt="">
+      <span>Sandglass Life</span>
+    </header>
+    <section class="hero">
+      <p class="kicker">For iPhone</p>
+      <h1>Play the day back.</h1>
+      <p class="deck">Sandglass Life keeps a private film of the day on your iPhone. Where you went, the walk or the drive, and one picture for each place. Photos and places stay on the phone. Nothing is uploaded.</p>
+      <ul class="facts">
+        <li>On your iPhone</li>
+        <li>Nothing uploaded</li>
+        <li>Coming to the App Store</li>
+      </ul>
+    </section>
+    <div class="stage">
+      <figure>
+        <div class="phone">
+          <img src="days.jpg" alt="The Days screen, with one day drawn as a route from home through a walk, Harbour Books, and a drive.">
+        </div>
+        <figcaption>Days</figcaption>
+      </figure>
+      <figure>
+        <div class="phone">
+          <img src="stills.jpg" alt="The Stills screen, with an overhead picture of home and the start of a walk.">
+        </div>
+        <figcaption>Stills</figcaption>
+      </figure>
+    </div>
+    <p class="note">A sample day, shown in the app.</p>
+    <footer>
+      <span>Sandglass Life</span>
+      <span>sandglasslife.com</span>
+    </footer>
+  </div>
+</body>
+</html>
