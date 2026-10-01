@@ -44,7 +44,7 @@
       padding: 26px 0 0;
     }
     .brand { display: flex; align-items: center; gap: 12px; }
-    .brand img { width: 40px; height: 40px; border-radius: 11px; }
+    .brand svg { width: 40px; height: 40px; display: block; flex: none; }
     .brand span {
       font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
       font-size: 21px;
@@ -166,7 +166,10 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <img src="icon.png" alt="">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#f6f1e8"/>
+          <path fill="#d46c35" d="M17 16.5h30a2.3 2.3 0 0 1 0 4.6h-30a2.3 2.3 0 0 1 0-4.6zM19.2 20.4h25.6C44.2 27 39.2 31.2 33.1 32.4L32 32.8l-1.1-.4C24.8 31.2 19.8 27 19.2 20.4zM30.9 33.2 32 32.8l1.1.4C39.2 34.6 44.2 38.8 44.8 47.6h-25.6C19.8 38.8 24.8 34.6 30.9 33.2zM17 46.9h30a2.3 2.3 0 0 1 0 4.6h-30a2.3 2.3 0 0 1 0-4.6z"/>
+        </svg>
         <span>Sandglass Life</span>
       </div>
       <p class="soon">Coming to the App Store</p>
