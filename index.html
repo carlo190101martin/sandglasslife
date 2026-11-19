@@ -11,7 +11,12 @@
   <meta property="og:description" content="Play the day back. A film of your day, on your iPhone.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sandglasslife.com/">
-  <meta property="og:image" content="https://sandglasslife.com/days.jpg">
+  <meta property="og:image" content="https://sandglasslife.com/the-day.jpg">
+  <meta property="og:video" content="https://sandglasslife.com/the-day.mp4">
+  <meta property="og:video:secure_url" content="https://sandglasslife.com/the-day.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1080">
+  <meta property="og:video:height" content="1920">
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
   <style>
@@ -65,6 +70,21 @@
       font-size: 15px;
     }
     .hero .badge { margin-top: 22px; }
+    .film {
+      width: min(360px, 100%);
+      margin: 56px auto 0;
+      text-align: center;
+    }
+    .film video {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 28px;
+      background: #141210;
+      box-shadow:
+        inset 0 0 0 1px rgba(246, 241, 232, 0.18),
+        0 22px 44px rgba(0, 0, 0, 0.38);
+    }
     .hero {
       padding: 72px 0 8px;
       text-align: center;
@@ -131,6 +151,13 @@
       font-size: 12px;
       letter-spacing: 0.16em;
       text-transform: uppercase;
+    }
+    .film figcaption {
+      color: var(--cream);
+      font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      text-transform: none;
     }
     .note {
       text-align: center;
@@ -209,6 +236,12 @@
       <a class="badge" href="https://apps.apple.com/app/sandglass-life/id6828789920">
         <img src="app-store.svg" alt="Download on the App Store" width="162" height="54">
       </a>
+      <figure class="film">
+        <video controls playsinline preload="metadata" poster="the-day.jpg" width="1080" height="1920">
+          <source src="the-day.mp4" type="video/mp4">
+        </video>
+        <figcaption>This was the day.</figcaption>
+      </figure>
     </section>
     <div class="stage">
       <figure>
